@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="./images/Icon.gif" type="image/gif"/>
+
+    <style media="screen">
+      body{
+        font-family: "Montserrat";
+        }
+
+        .colored-section{
+        background-color: #9aceff;
+        color: #617be3;
+        padding: 7% 15%;
+        text-align: center;
+        }
+
+        .white-section{
+        color: #000;
+        background-color: #fff;
+        padding: 5% 15%;
+        text-align: center;
+        }
+
+        #title{
+        background-color: #617be3;
+        color: #fff;
+        }
+
+        #title h1{
+          padding-top: 2%;
+          padding-bottom: 1%;
+        }
+
+        .container-fluid{
+        padding: 3% 15%;
+        }
+
+        h1{
+        font-family: "Montserrat";
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 900;
+        }
+
+        h2{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        font-weight: 500;
+        }
+
+        h3{
+        font-size: 1rem;
+        margin: 0.5rem;
+        color: #8F818F;
+        }
+
+        .navbar{
+          background-color: #617be3;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .navbar-brand{
+        font-family: Ubuntu;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-left: 4%;
+        }
+
+        .nav-item{
+        padding: 0 18px;
+        }
+
+        .nav-link{
+        font-size: 1.2rem;
+        font-family: "Montserrat";
+        }
+
+        .page-title{
+          padding-top: 10%;
+        }
+
+        .download-button{
+        margin: 5% 3% 5% 0;
+        }
+
+        .trio-image{
+        width: 55%;
+        margin-left: 50%;
+        }
+
+        #features{
+
+        }
+
+        .fa-check-circle, .fa-bullseye, .fa-heart{
+        color: #9aceff;
+        }
+
+        .fa-heart:hover, .fa-bullseye:hover, .fa-check-circle:hover{
+        color: #617be3;
+        }
+
+        #testimonials{
+
+        }
+
+        #testimonials h2{
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: bold;
+        }
+
+        #testimonials img{
+        border-radius: 100%;
+        width: 20%;
+        margin: 20px;
+        }
+
+        #press{
+        padding-bottom: 3%;
+        }
+
+        .press-logo{
+        width: 15%;
+        margin: 0 20px;
+        }
+
+        #addRecord{
+        padding: 6%;
+        }
+
+        .pricing-card{
+        padding: 3% 2%;
+        }
+
+        #getRecord{
+        color: #617be3;
+        }
+
+        #footer{
+          padding: 1%;
+          background-color: #617be3;
+        }
+
+        #footer a{
+        color: #FFFFFF;
+        padding: 0 2%
+        }
+
+        #footer p{
+        color: white;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        }
+
+        .form{
+          padding: 10%;
+        }
+        .form-card{
+          padding: 5%;
+          background-color: white;
+          box-shadow: 0px 0px 16px #617be3;
+        }
+        .my-custom-scrollbar {
+        position: relative;
+        height: 200px;
+        overflow: auto;
+        }
+        .table-wrapper-scroll-y {
+        display: block;
+        }
+
+        @media (max-width:1020px){
+        .trio-image{
+          width: 60%;
+        }
+
+        #title{
+          text-align: center;
+        }
+        }
+    </style>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Criminal Record Management</title>
+
+  </head>
+
+  <body>
+
+    <div id="title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <!-- <a href="#" class="navbar-brand">CRM</a> -->
+          <a href="#" class="navbar-brand"><img src="./images/logo.png" style="width: 50%;" /></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#addRecord" class="nav-link">Add Record</a></li>
+              <li class="nav-item"><a href="#getRecord" class="nav-link">Search</a></li>
+              <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="row page-title">
+          <div class="col-lg-6">
+            <h1 style="margin-top: 1%;">World Leading Technology</h1>
+            <h1>&nbsp &nbsp &nbspNow At Your Fingers</h1>
+          </div>
+          <div class="col-lg-6">
+            <img src="./images/ct.png" alt="Cam" class="trio-image" style="width: 50%;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="features" class="white-section">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 feature">
+          <i class="fas fa-check-circle fa-3x"></i>
+          <h2>Easy to use</h2>
+          <!-- <h3>It's so easy to use that even your cat can learn English</h3> -->
+        </div>
+
+        <div class="col-lg-4 col-md-12 feature">
+          <i class="fas fa-bullseye fa-3x"></i>
+          <h2>Accurate</h2>
+          <!-- <h3>Our language courses are the best of their natives</h3> -->
+        </div>
+
+        <div class="col-lg-4 col-md-12 feature">
+          <i class="fas fa-heart fa-3x"></i>
+          <h2>Guaranteed to work</h2>
+          <!-- <h3>You can learn a new language within a month</h3> -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="testimonials" class="carousel slide colored-section" data-ride="false">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>“Poverty is the parent of revolution and crime.”</h2>
+          <em>Aristotle</em>
+        </div>
+        <div class="carousel-item">
+          <h2>“When a man is denied the right to live the life he believes in, he has no choice but to become an outlaw.”</h2>
+          <em>Nelson Mandela</em>
+        </div>
+        <div class="carousel-item">
+          <h2>“To have once been a criminal is no disgrace. To remain a criminal is the disgrace”</h2>
+          <em>Malcolm X</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </div>
+
+    <section id="addRecord" class="white-section form">
+      <h1>Add a Record to the Blockchain</h1>
+        <form class="border border-primary form-card" onSubmit="App.addrecord(); return false;">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control" id="formname" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="formid" placeholder="Enter Id">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="formplace" placeholder="Location">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="formseverity" placeholder="Severity">
+                  <option value="" disabled selected>Select Severity of the crime</option>
+                  <option value="Murder">Murder</option>
+                  <option value="Robbery">Robbery</option>
+                  <option value="Child Abuse">Child Abuse</option>
+                  <option value="Riot">Riot</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col border border-primary form-card">
+              <div class="form-group">
+                <label for="image">Enter Image</label>
+                <input type="file" class="form-control-file" id="formimage" style="padding: 0 20%;">
+              </div>
+            </div>
+          </div>
+        </form>
+    </section>
+
+    <section id="getRecord" class="colored-section">
+      <h1>Get a Record from the Blockchain</h1>
+      <form class="border border-primary form-card" onSubmit="App.getrecord(); return false;">
+        <div class="row">
+          <div class="col-md-5">
+              <div class="form-group">
+                <input type="text" class="form-control" id="fname" placeholder="Enter Name">
+              </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <input type="text" class="form-control" id="fid" placeholder="Enter Id">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+          </div>
+        </div>
+        <hr>
+        <hr>
+        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Record Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Place</th>
+                <th scope="col">Severity</th>
+              </tr>
+            </thead>
+            <tbody id="displayRecords">
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </section>
+
+    <section id="getImage" class="white-section" style="margin-bottom: 4%;">
+      <div class="border border-primary form-card">
+        <h2>Get Information using Block id</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-card">
+              <img src="" onerror="this.src='./images/imgplaceholder.png'" id="rimage" style="height: 200px; width: auto">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <form onSubmit="App.getImage(); return false;">
+                <div class="row" >
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="rid" placeholder="Enter Id">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary btn-block">Find</button>
+                  </div>
+                  <div class="col-md-2">
+                    <span style="font-family: Arial Unicode MS, Lucida Grande; font: 1rem ;", id ="Validity">
+                      &#x2705;
+                  </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <form onSubmit="App.searchHim(); return false;">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="rDate" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Place</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="rPlace" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Severity</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="rSeverity" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <button type="submit" class="btn btn-outline-danger btn-block">Find</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="colored-section fixed-bottom">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+
+      <p>© Copyright 2021 Blockchain Project</p>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
